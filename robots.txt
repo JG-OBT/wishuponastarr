@@ -1,0 +1,9 @@
+# robots.txt for Wish Upon a Starre
+User-agent: *
+Allow: /
+
+# Exclude potential sensitive or legal preview states
+Disallow: /privacy-policy.html
+Disallow: /cookie-policy.html
+
+Sitemap: https://wishuponastarredorset.co.uk/sitemap.xml

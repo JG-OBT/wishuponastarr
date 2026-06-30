@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Color Palette - Updated to be extremely bright, bold, and magical for kids parties! */
+  --color-brand-primary: #1e1b4b;      /* Rich Navy for crisp high-contrast text */
+  --color-brand-purple: #8b5cf6;       /* Bright Magical Purple */
+  --color-brand-purple-deep: #5b21b6;  /* Deep energetic Royal Violet */
+  --color-brand-lilac: #f5f3ff;        /* Clean soft Lilac background */
+  --color-brand-pink: #ec4899;         /* Vibrant high-energy bubblegum star pink */
+  --color-brand-pink-bright: #ff2a93;  /* Hot Sparkling Star Pink */
+  --color-brand-pink-light: #fff1f2;   /* Soft warm blush background */
+  --color-brand-blush: #fff5f7;        /* Energetic bright rose backdrop */
+  --color-brand-gold: #f59e0b;         /* Sunny golden star yellow */
+  --color-brand-gold-light: #fffbeb;   /* Bright warm gold background */
+  --color-brand-teal: #06b6d4;         /* Adventure sky teal (Ice Princess & Superhero blue) */
+  --color-brand-sky: #3b82f6;          /* Bold superhero cobalt blue */
+  --color-brand-text: #1e1b4b;         /* High-contrast body text */
+  --color-brand-muted: #4f46e5;        /* Dynamic bright indigo for subheaders */
+  --color-brand-white: #ffffff;        /* Pure bright white base */
+  
+  /* Fonts */
+  --font-display: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Elevation */
+  --shadow-sm: 0 2px 4px 0 rgba(139, 92, 246, 0.05);
+  --shadow-md: 0 10px 20px -2px rgba(139, 92, 246, 0.1), 0 4px 10px -2px rgba(139, 92, 246, 0.06);
+  --shadow-lg: 0 20px 25px -5px rgba(236, 72, 153, 0.15), 0 10px 10px -5px rgba(139, 92, 246, 0.1);
+  --shadow-magical: 0 25px 35px -5px rgba(255, 42, 147, 0.35), 0 12px 18px -5px rgba(139, 92, 246, 0.25);
+  --shadow-teal: 0 25px 35px -5px rgba(6, 182, 212, 0.35);
+  --shadow-gold: 0 25px 35px -5px rgba(245, 158, 11, 0.3);
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--color-brand-text);
+  background-color: var(--color-brand-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--color-brand-primary);
+}
+
+/* Utility Star/Sparkle Animations */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(15deg); }
+}
+
+.animate-sparkle {
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.animate-sparkle-delayed {
+  animation: twinkle 3s infinite ease-in-out;
+  animation-delay: 1.5s;
+}
+
+/* Custom Accessibility Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-brand-purple);
+  outline-offset: 2px;
+}
+
+/* Card Hover Effects */
+/* Redefined at the bottom with child-friendly bouncy scaling and glowing shadow effects */
+
+/* Sticky Header Customization */
+.sticky-header {
+  background-color: rgba(250, 250, 249, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(243, 232, 255, 0.5);
+  transition: background-color 0.3s;
+}
+
+/* Cookie Banner & Preferences Modal Styles */
+.cookie-banner {
+  box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.05), 0 -8px 10px -6px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(243, 232, 255, 0.8);
+}
+
+.cookie-modal-backdrop {
+  background-color: rgba(30, 27, 75, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-lilac);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-pink);
+}
+
+/* Section Dividers with subtle stars */
+.star-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.star-divider::before,
+.star-divider::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-brand-pink-bright), transparent);
+}
+
+/* Children's Party Bubbly & Magical Background Patterns */
+.bg-bubbles {
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(244, 63, 94, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 85% 25%, rgba(139, 92, 246, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.06) 0%, transparent 35%),
+    radial-gradient(circle at 95% 75%, rgba(245, 158, 11, 0.07) 0%, transparent 20%);
+  background-color: var(--color-brand-white);
+}
+
+.bg-confetti {
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(236, 72, 153, 0.15) 3px, transparent 4px),
+    radial-gradient(circle at 90% 15%, rgba(6, 182, 212, 0.15) 3px, transparent 4px),
+    radial-gradient(circle at 30% 85%, rgba(245, 158, 11, 0.15) 4px, transparent 5px),
+    radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.15) 3px, transparent 4px),
+    radial-gradient(circle at 50% 40%, rgba(236, 72, 153, 0.08) 2px, transparent 3px);
+  background-size: 120px 120px;
+}
+
+/* Floating Animations for Star Dust / Balloons */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-12px) scale(1.03); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+  50% { transform: translateY(-10px) scale(0.98) rotate(3deg); }
+}
+
+.floating-element {
+  animation: float 5s ease-in-out infinite;
+}
+
+.floating-element-delayed {
+  animation: float-delayed 6s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+/* Text Gradient Helpers */
+.text-gradient-magical {
+  background: linear-gradient(to right, #ff2a93, #8b5cf6, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-superhero {
+  background: linear-gradient(to right, #3b82f6, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Extremely Bubbly CTA buttons */
+.bouncy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bouncy-btn:hover {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(255, 42, 147, 0.3);
+}
+
+.bouncy-btn:active {
+  transform: scale(0.98) translateY(0);
+}
+
+/* Enhanced Magical Card Tilt & Glow */
+.magical-card {
+  background-color: #ffffff;
+  border: 2px solid rgba(243, 232, 255, 0.8);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.magical-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-magical);
+  border-color: var(--color-brand-pink);
+}
+
+/* Keyboard Access and Screen Reader Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive constraints */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-sparkle, .animate-sparkle-delayed, .magical-card {
+    animation: none !important;
+    transition: none !important;
+  }
+}

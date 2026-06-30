@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Wish Upon a Starre Dorset</title>
+  <meta name="description" content="Meet Abbie, founder of Wish Upon a Starre. Discover our journey from Disney Cruise Line performer to Dorset's award-winning premium character party team.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#1e1b4b',      // rich navy
+              purple: '#8b5cf6',       // bright magical purple
+              purpledeep: '#5b21b6',   // deep violet
+              lilac: '#f5f3ff',        // soft clean lilac
+              pink: '#ec4899',         // vibrant high-energy pink
+              pinkbright: '#ff2a93',   // hot sparkling pink
+              pinklight: '#fff1f2',    // soft warm blush
+              blush: '#fff5f7',        // energetic bright rose backdrop
+              gold: '#f59e0b',         // sunny yellow
+              goldlight: '#fffbeb',    // bright warm gold background
+              teal: '#06b6d4',         // sky teal
+              sky: '#3b82f6',          // superhero blue
+              white: '#ffffff',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Outfit', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="flex flex-col min-h-full bg-brand-white text-brand-primary selection:bg-brand-pink selection:text-brand-primary">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 sticky-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-24">
+        
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center space-x-2" aria-label="Wish Upon a Starre Homepage">
+            <img src="/assets/images/logo-main.png" alt="Wish Upon a Starre Logo" class="h-12 w-auto sm:h-16 rounded-full border border-purple-100" referrerPolicy="no-referrer">
+            <span class="font-display font-bold text-lg sm:text-xl text-brand-primary tracking-tight hidden sm:block">
+              Wish Upon a <span class="text-brand-purple">Starre</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="hidden xl:flex space-x-3 xl:space-x-4 2xl:space-x-6 items-center" aria-label="Desktop Navigation">
+          <a href="whats-coming-up.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">What’s Coming Up?</a>
+          <a href="our-story.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Our Story</a>
+          <a href="sensory-and-song.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Sensory & Song</a>
+          <a href="parties-for-little-starres.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Parties for Little Starres</a>
+          <a href="our-characters.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Our Characters</a>
+          <a href="packages-and-prices.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Packages & Prices</a>
+          
+          <!-- BOOKING_FORM_URL_HERE -->
+          <a href="packages-and-prices.html" class="inline-flex items-center justify-center bg-brand-pinkbright hover:bg-opacity-90 text-white font-extrabold text-xs px-3.5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-150 hover:scale-105 tracking-wide uppercase bouncy-btn">
+            Request a Booking ✨
+          </a>
+        </nav>
+
+        <div class="flex xl:hidden">
+          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-full text-brand-primary hover:bg-brand-lilac hover:text-brand-purple focus:outline-none transition-colors" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg id="menu-open-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-close-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-white border-b border-purple-100 shadow-xl max-h-[85vh] overflow-y-auto" aria-label="Mobile Navigation">
+      <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+        <a href="whats-coming-up.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">What’s Coming Up?</a>
+        <a href="our-story.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Our Story</a>
+        <a href="sensory-and-song.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Sensory & Song</a>
+        <a href="parties-for-little-starres.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Parties for Little Starres</a>
+        <a href="our-characters.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Our Characters</a>
+        <a href="packages-and-prices.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Packages & Prices</a>
+        
+        <div class="pt-4 pb-2 px-4">
+          <!-- BOOKING_FORM_URL_HERE -->
+          <a href="packages-and-prices.html" class="w-full flex items-center justify-center bg-brand-purple text-white font-bold py-3.5 px-4 rounded-full shadow-lg text-center">
+            Request a Booking ✨
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN MAIN SECTION -->
+  <main class="flex-grow">
+
+    <!-- HERO / INTRO AREA -->
+    <section class="relative bg-gradient-to-br from-brand-blush via-brand-lilac to-white py-16 sm:py-24 overflow-hidden bg-confetti" aria-labelledby="story-title">
+      <span class="absolute top-12 left-12 text-brand-pinkbright text-3xl animate-sparkle floating-element">👑</span>
+      <span class="absolute bottom-12 right-12 text-brand-teal text-4xl animate-sparkle-delayed floating-element-delayed">✨</span>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text Column -->
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-brand-pinkbright font-display font-black uppercase tracking-wider text-sm block">How It All Started</span>
+            <h1 id="story-title" class="text-4xl sm:text-6xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-pinkbright via-brand-purple to-brand-gold tracking-tight leading-tight">Our Story 📖</h1>
+            <div class="star-divider !justify-start">
+              <span class="text-amber-500 mr-2 text-2xl animate-sparkle">⭐</span>
+              <span class="text-brand-pinkbright mr-2 text-xl animate-sparkle-delayed">✨</span>
+              <span class="text-brand-teal mr-2 text-2xl animate-sparkle">⭐</span>
+            </div>
+            <p class="text-lg text-brand-muted leading-relaxed">
+              <strong>Wish Upon a Starre</strong> was founded in 2017 by Abbie, who has a deep background in performing and a passion for creating magical memories. After working as a professional performer in theaters across the UK and with the prestigious <strong>Disney Cruise Line</strong>, Abbie returned home to Dorset with a clear mission: to bring theater-quality, deeply magical character entertainment directly to local families.
+            </p>
+            <p class="text-brand-muted leading-relaxed">
+              What started as a single princess visiting local homes has blossomed into Dorset's premier, award-winning entertainment company, supporting a team of professionally trained performers and bringing smiles to thousands of little starres every single year.
+            </p>
+          </div>
+
+          <!-- Photo Column -->
+          <div class="lg:col-span-5">
+            <div class="relative max-w-sm mx-auto">
+              <div class="absolute inset-0 bg-gradient-to-r from-brand-pink to-brand-lilac rounded-3xl blur opacity-30"></div>
+              <!-- CLIENT: Replace owner-abbie.jpg with a high quality photo of Abbie smiling -->
+              <div class="relative bg-white p-2.5 rounded-3xl shadow-magical border border-purple-50">
+                <img src="/assets/images/owner-abbie.jpg" alt="Abbie, the founder of Wish Upon a Starre, children's entertainer in Dorset" class="rounded-2xl w-full h-auto object-cover aspect-square" width="500" height="500" referrerPolicy="no-referrer">
+                <div class="absolute bottom-5 right-5 bg-indigo-950 text-white text-xs font-semibold px-4 py-2 rounded-xl border border-indigo-900 shadow-md">
+                  Abbie • Founder & Lead Performer
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY SECTIONS -->
+    <section class="py-16 sm:py-24 bg-white border-t border-purple-50" aria-label="Why we do it and our values">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <!-- Section 1: Why we do it -->
+          <div class="space-y-4">
+            <div class="h-12 w-12 rounded-2xl bg-pink-100 text-pink-700 flex items-center justify-center text-xl shadow-inner font-bold">🌸</div>
+            <h2 class="text-2xl font-bold font-display text-indigo-950">Why we do it</h2>
+            <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+              Childhood is short, and the years of pure belief and wonder are even shorter. We believe that when a child meets their hero, it shouldn't just look like someone in a costume—it should feel like meeting the real character. We do this to capture that fleeting moment of absolute magic, helping families create precious memories that they will treasure for a lifetime.
+            </p>
+          </div>
+
+          <!-- Section 2: What makes us different -->
+          <div class="space-y-4">
+            <div class="h-12 w-12 rounded-2xl bg-purple-100 text-brand-purple flex items-center justify-center text-xl shadow-inner font-bold">✨</div>
+            <h2 class="text-2xl font-bold font-display text-indigo-950">What makes us different</h2>
+            <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+              We stand apart because of our training and theatrical standards. Every single performer we hire has professional background in vocals, drama, or musical theater. Our custom-made dresses are crafted from heavy, luxurious bridal satins (no cheap plastic-style fabrics!), and our custom wigs are styled beautifully. We bring live, highly skilled singing performances and engaging theater to every single booking.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Section 3: A little magic, delivered professionally -->
+        <div class="bg-brand-blush p-8 sm:p-12 rounded-3xl border border-pink-100 text-center space-y-6 max-w-3xl mx-auto">
+          <div class="inline-flex text-amber-500 animate-sparkle text-3xl">⭐⭐⭐</div>
+          <h2 class="text-2xl sm:text-3xl font-display font-bold text-indigo-950">A little magic, delivered professionally</h2>
+          <p class="text-brand-muted text-sm sm:text-base leading-relaxed">
+            Behind the glitter and fairy dust lies a highly organized and fully insured small business. We make booking a breeze with clear, timely communication, transparent pricing, and 100% reliable scheduling. All our main characters are fully DBS-checked, public liability insured, and trained in active crowd engagement. We show up on time, handle the entertainment fully, and let parents sit back, relax, and enjoy the party!
+          </p>
+          <div class="pt-4">
+            <!-- BOOKING_FORM_URL_HERE -->
+            <a href="packages-and-prices.html" class="inline-flex items-center justify-center bg-brand-purple hover:bg-opacity-95 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition-all">
+              Request a Booking Today ✨
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-primary text-gray-300 pt-16 pb-8 border-t border-indigo-950 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-indigo-900">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-2">
+            <img src="/assets/images/logo-main.png" alt="Wish Upon a Starre Icon" class="h-10 w-auto rounded-full bg-white p-0.5" referrerPolicy="no-referrer">
+            <span class="font-display font-bold text-lg text-white">Wish Upon a <span class="text-brand-pink">Starre</span></span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-sm">
+            Award-winning children's character party entertainment based in Dorset, UK. We bring fairytale princess magic, whimsical fairy adventures, and early-years sensory play to families, nurseries, and public celebrations.
+          </p>
+          <div class="flex space-x-3.5 pt-2">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Facebook">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Instagram">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on TikTok">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.25 1.79v4.03c-1.44-.17-2.86-.74-3.98-1.72-.08-.07-.13-.17-.25-.21-.02 1.39-.01 2.78-.01 4.17 0 1.43-.24 2.91-.94 4.14-.72 1.25-1.92 2.21-3.3 2.65-1.46.47-3.08.45-4.52-.1-.08-.03-.15-.09-.24-.11-1.39-.58-2.52-1.67-3.14-3.07-.63-1.4-.64-3.04-.15-4.46.46-1.34 1.46-2.49 2.73-3.14.07-.03.11-.11.19-.14 1.05-.44 2.21-.6 3.35-.45V.02zm0 16.29c1.07.03 2.15-.36 2.84-1.18.72-.85.89-2.06.63-3.13-.02-.1-.05-.2-.11-.28-.01-1.43 0-2.86 0-4.3-.43.15-.84.36-1.22.63-.82.59-1.36 1.55-1.49 2.56-.01 1.43 0 2.86 0 4.3.18.1.37.24.58.26.24.03.5.02.77.14z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-4">
+          <span class="font-display font-bold text-sm text-white block uppercase tracking-wide">Quick Exploration</span>
+          <nav class="flex flex-col space-y-2 text-xs sm:text-sm" aria-label="Footer Quick Navigation">
+            <a href="whats-coming-up.html" class="hover:text-white transition-colors">What’s Coming Up?</a>
+            <a href="our-story.html" class="hover:text-white transition-colors">Our Story</a>
+            <a href="sensory-and-song.html" class="hover:text-white transition-colors">Sensory & Song Sessions</a>
+            <a href="parties-for-little-starres.html" class="hover:text-white transition-colors">Party Entertainment</a>
+            <a href="our-characters.html" class="hover:text-white transition-colors">Meet the Characters</a>
+            <a href="packages-and-prices.html" class="hover:text-white transition-colors">Packages & Prices</a>
+          </nav>
+        </div>
+
+        <div class="md:col-span-4 space-y-4">
+          <span class="font-display font-bold text-sm text-white block uppercase tracking-wide">Contact Our Office</span>
+          <div class="text-xs sm:text-sm space-y-3">
+            <p class="leading-normal text-gray-400">
+              Based in beautiful Dorset, United Kingdom. Hosting parties in Bournemouth, Poole, Christchurch, Weymouth, Dorchester, and surrounding areas.
+            </p>
+            <div class="space-y-1">
+              <span class="text-gray-500 block">General Enquiries:</span>
+              <a href="mailto:info@example.com" class="text-brand-pink hover:underline font-semibold block">info@example.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
+        <div class="space-y-2 text-xs text-gray-500">
+          <p>© 2026 Wish Upon a Starre. All rights reserved.</p>
+          <div class="flex flex-wrap gap-4 text-gray-400">
+            <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+            <span class="text-indigo-900">•</span>
+            <a href="cookie-policy.html" class="hover:text-white transition-colors">Cookie Policy</a>
+            <span class="text-indigo-900">•</span>
+            <button class="hover:text-white transition-colors font-medium cursor-pointer" data-manage-cookies>Manage cookies</button>
+          </div>
+        </div>
+
+        <div class="md:absolute md:bottom-0 md:right-0 shrink-0 flex items-center space-x-2 bg-indigo-950 p-2.5 rounded-xl border border-indigo-900/40">
+          <div class="text-right hidden sm:block">
+            <span class="text-[10px] text-gray-400 block uppercase tracking-wider font-mono">Outstanding Trust Partner</span>
+            <span class="text-xs font-bold text-brand-pink block">OBT Certified</span>
+          </div>
+          <img src="/assets/images/OBT.png" alt="OBT Partner Certification Badge" class="h-10 w-auto rounded opacity-80 hover:opacity-100 transition-opacity" referrerPolicy="no-referrer">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/cookies.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

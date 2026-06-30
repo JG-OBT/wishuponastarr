@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+    <defs>
+      <linearGradient id="grad-event-science-session" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f0fdfa;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad-event-science-session)" />
+    
+    <!-- Background grid decoration -->
+    <g opacity="0.05" stroke="#115e59" stroke-width="2">
+      <line x1="0" y1="150" x2="900" y2="150" />
+      <line x1="0" y1="300" x2="900" y2="300" />
+      <line x1="0" y1="450" x2="900" y2="450" />
+      <line x1="225" y1="0" x2="225" y2="600" />
+      <line x1="450" y1="0" x2="450" y2="600" />
+      <line x1="675" y1="0" x2="675" y2="600" />
+    </g>
+    
+    <!-- Custom shape decoration -->
+    <path d="M80 40 L120 40 M100 40 L100 80 L60 150 L140 150 Z" stroke="#115e59" stroke-width="8" fill="none" opacity="0.3" transform="scale(1.5) translate(100, 50)" />
+
+    <g transform="translate(0, 280)">
+      <text x="50%" y="0" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="42" font-weight="bold" fill="#115e59">
+        Seriously Fun Science
+      </text>
+      <text x="50%" y="55" dominant-baseline="middle" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="18" fill="#115e59" letter-spacing="1" opacity="0.7">
+        Event Card (600x400)
+      </text>
+      <text x="50%" y="110" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#115e59" opacity="0.5">
+        Wish Upon a Starre Dorset • Client Image Asset: /assets/images/event-science-session.jpg
+      </text>
+    </g>
+
+    <!-- Star clusters in corners -->
+    <path d="M30 40 L35 55 L50 55 L38 65 L42 80 L30 70 L18 80 L22 65 L10 55 L25 55 Z" fill="#eab308" opacity="0.3" />
+    <path d="M850 540 L855 555 L870 555 L858 565 L862 580 L850 570 L838 580 L842 565 L830 555 L845 555 Z" fill="#eab308" opacity="0.3" />
+  </svg>

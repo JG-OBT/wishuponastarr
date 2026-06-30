@@ -1,0 +1,6 @@
+{
+  "name": "Wish Upon a Starre",
+  "description": "A Dorset-based character party entertainment company offering magical parties, sensory sessions, and events.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

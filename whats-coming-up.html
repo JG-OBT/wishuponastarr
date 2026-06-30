@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Coming Up | Wish Upon a Starre Dorset</title>
+  <meta name="description" content="Explore our upcoming character appearances, interactive sensory song weekly classes, and theatrical auditions in Dorset.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#1e1b4b',      // rich navy
+              purple: '#8b5cf6',       // bright magical purple
+              purpledeep: '#5b21b6',   // deep violet
+              lilac: '#f5f3ff',        // soft clean lilac
+              pink: '#ec4899',         // vibrant high-energy pink
+              pinkbright: '#ff2a93',   // hot sparkling pink
+              pinklight: '#fff1f2',    // soft warm blush
+              blush: '#fff5f7',        // energetic bright rose backdrop
+              gold: '#f59e0b',         // sunny yellow
+              goldlight: '#fffbeb',    // bright warm gold background
+              teal: '#06b6d4',         // sky teal
+              sky: '#3b82f6',          // superhero blue
+              white: '#ffffff',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Outfit', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="flex flex-col min-h-full bg-brand-white text-brand-primary selection:bg-brand-pink selection:text-brand-primary">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 sticky-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-24">
+        
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="flex items-center space-x-2" aria-label="Wish Upon a Starre Homepage">
+            <img src="/assets/images/logo-main.png" alt="Wish Upon a Starre Logo" class="h-12 w-auto sm:h-16 rounded-full border border-purple-100" referrerPolicy="no-referrer">
+            <span class="font-display font-bold text-lg sm:text-xl text-brand-primary tracking-tight hidden sm:block">
+              Wish Upon a <span class="text-brand-purple">Starre</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="hidden xl:flex space-x-3 xl:space-x-4 2xl:space-x-6 items-center" aria-label="Desktop Navigation">
+          <a href="whats-coming-up.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">What’s Coming Up?</a>
+          <a href="our-story.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Our Story</a>
+          <a href="sensory-and-song.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Sensory & Song</a>
+          <a href="parties-for-little-starres.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Parties for Little Starres</a>
+          <a href="our-characters.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Our Characters</a>
+          <a href="packages-and-prices.html" class="desktop-nav-link text-brand-primary hover:text-brand-purple text-xs xl:text-sm font-extrabold transition-colors">Packages & Prices</a>
+          
+          <!-- BOOKING_FORM_URL_HERE -->
+          <a href="packages-and-prices.html" class="inline-flex items-center justify-center bg-brand-pinkbright hover:bg-opacity-90 text-white font-extrabold text-xs px-3.5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-150 hover:scale-105 tracking-wide uppercase bouncy-btn">
+            Request a Booking ✨
+          </a>
+        </nav>
+
+        <div class="flex xl:hidden">
+          <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-full text-brand-primary hover:bg-brand-lilac hover:text-brand-purple focus:outline-none transition-colors" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg id="menu-open-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-close-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-white border-b border-purple-100 shadow-xl max-h-[85vh] overflow-y-auto" aria-label="Mobile Navigation">
+      <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+        <a href="whats-coming-up.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">What’s Coming Up?</a>
+        <a href="our-story.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Our Story</a>
+        <a href="sensory-and-song.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Sensory & Song</a>
+        <a href="parties-for-little-starres.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Parties for Little Starres</a>
+        <a href="our-characters.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Our Characters</a>
+        <a href="packages-and-prices.html" class="mobile-nav-link block px-4 py-3 rounded-xl text-base text-brand-primary hover:bg-brand-lilac hover:text-brand-purple transition-colors">Packages & Prices</a>
+        
+        <div class="pt-4 pb-2 px-4">
+          <!-- BOOKING_FORM_URL_HERE -->
+          <a href="packages-and-prices.html" class="w-full flex items-center justify-center bg-brand-purple text-white font-bold py-3.5 px-4 rounded-full shadow-lg text-center">
+            Request a Booking ✨
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN MAIN SECTION -->
+  <main class="flex-grow">
+
+    <!-- PAGE HEADER -->
+    <section class="relative bg-gradient-to-br from-brand-blush via-brand-lilac to-white py-16 text-center overflow-hidden bg-confetti" aria-labelledby="page-title">
+      <span class="absolute top-6 left-12 text-brand-pinkbright text-2xl floating-element">🎈</span>
+      <span class="absolute bottom-6 right-12 text-brand-teal text-3xl floating-element-delayed">✨</span>
+      <div class="max-w-4xl mx-auto px-4 space-y-4 relative z-10">
+        <span class="text-brand-pinkbright font-display font-black uppercase tracking-wider text-sm block">Scheduled Public Events</span>
+        <h1 id="page-title" class="text-4xl sm:text-6xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-pinkbright via-brand-purple to-brand-gold leading-tight">What’s Coming Up? 🎈</h1>
+        <div class="star-divider">
+          <span class="text-amber-500 mx-2 text-2xl animate-sparkle">⭐</span>
+          <span class="text-brand-pinkbright mx-2 text-xl animate-sparkle-delayed">✨</span>
+          <span class="text-brand-teal mx-2 text-2xl animate-sparkle">⭐</span>
+        </div>
+        <p class="text-lg text-brand-muted max-w-2xl mx-auto leading-relaxed">
+          Find our latest sessions, themed events, public appearances and recruitment announcements here. Come play, learn, and make magic together!
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENTS LISTING -->
+    <section class="py-12 sm:py-20 bg-white" aria-label="List of events">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          
+          <!-- Event Card 1: Sensory and Song -->
+          <article class="magical-card flex flex-col md:flex-row bg-brand-white md:min-h-[250px]">
+            <!-- CLIENT: Replace event-sensory-song-ms-rachel.jpg with sensory event scene -->
+            <div class="md:w-2/5 shrink-0 relative overflow-hidden aspect-[16/10] md:aspect-auto">
+              <img src="/assets/images/event-sensory-song-ms-rachel.jpg" alt="Baby Sensory and Song session" class="w-full h-full object-cover absolute inset-0" width="400" height="400" referrerPolicy="no-referrer">
+              <span class="absolute top-3 left-3 bg-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full">Weekly Class</span>
+            </div>
+            <div class="p-6 md:p-8 flex flex-col justify-between flex-grow space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center space-x-1.5 text-xs font-semibold text-brand-gold">
+                  <span>📅 Tuesdays & Thursdays</span>
+                  <span>•</span>
+                  <span>⏰ 10:00 AM & 11:30 AM</span>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-950">Sensory and Song</h2>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Interactive developer sessions for babies, toddlers, and nursery children. We use lively puppets, mini instruments, colorful sensory scarves, parachute games, and beautiful cascades of bubbles to stimulate early motor and developmental skills.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-purple-50">
+                <span class="text-xs font-bold text-purple-800">Weymouth & Poole Halls</span>
+                <!-- BOOKING_FORM_URL_HERE -->
+                <a href="sensory-and-song.html" class="inline-flex items-center justify-center bg-brand-purple hover:bg-opacity-95 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                  Find Out More
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event Card 2: Ms. Rachel Play Session -->
+          <article class="magical-card flex flex-col md:flex-row bg-brand-white md:min-h-[250px]">
+            <!-- CLIENT: Replace event-sensory-song-ms-rachel.jpg with actual session photo -->
+            <div class="md:w-2/5 shrink-0 relative overflow-hidden aspect-[16/10] md:aspect-auto">
+              <img src="/assets/images/event-sensory-song-ms-rachel.jpg" alt="Ms. Rachel Early Years Music and Play Session" class="w-full h-full object-cover absolute inset-0" width="400" height="400" referrerPolicy="no-referrer">
+              <span class="absolute top-3 left-3 bg-brand-pinkbright text-white text-xs font-bold px-3 py-1 rounded-full">Special Session</span>
+            </div>
+            <div class="p-6 md:p-8 flex flex-col justify-between flex-grow space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center space-x-1.5 text-xs font-semibold text-pink-700">
+                  <span>📅 Sunday, 19th July 2026</span>
+                  <span>•</span>
+                  <span>⏰ 2:00 PM - 4:00 PM</span>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-950">Ms. Rachel Early Years Play & Song</h2>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  A special musical development session perfect for babies, toddlers, and young kids. Join our Ms. Rachel lookalike character for early speech stimulation, interactive sign language, puppet theater, and massive bubble play!
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-purple-50">
+                <span class="text-xs font-bold text-pink-800">Dorchester Youth Center</span>
+                <!-- BOOKING_FORM_URL_HERE -->
+                <a href="packages-and-prices.html" class="inline-flex items-center justify-center bg-brand-pinkbright hover:bg-opacity-95 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                  Book Here
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event Card 3: Seasonal Character Events -->
+          <article class="magical-card flex flex-col md:flex-row bg-brand-white md:min-h-[250px]">
+            <!-- CLIENT: Replace packages-main.jpg with a seasonal winter/summer event banner -->
+            <div class="md:w-2/5 shrink-0 relative overflow-hidden aspect-[16/10] md:aspect-auto">
+              <img src="/assets/images/packages-main.jpg" alt="Seasonal Character Holiday Celebration" class="w-full h-full object-cover absolute inset-0" width="400" height="400" referrerPolicy="no-referrer">
+              <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">Holiday Event</span>
+            </div>
+            <div class="p-6 md:p-8 flex flex-col justify-between flex-grow space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center space-x-1.5 text-xs font-semibold text-amber-700">
+                  <span>📅 August Summer Holidays</span>
+                  <span>•</span>
+                  <span>⏰ Dates Vary By Location</span>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-950">Seasonal Character Events</h2>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Join our magical royal princess tea parties, fairytale storytime assemblies, and enchanting dance routines hosted during the school breaks. Meet multiple characters, get glitter face paint, play themed games, and earn official medals.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-purple-50">
+                <span class="text-xs font-bold text-amber-800">Venues Across Dorset</span>
+                <!-- BOOKING_FORM_URL_HERE -->
+                <a href="packages-and-prices.html" class="inline-flex items-center justify-center bg-brand-purple hover:bg-opacity-95 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                  Book Here
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event Card 4: We are Hiring -->
+          <article class="magical-card flex flex-col md:flex-row bg-brand-white md:min-h-[250px]">
+            <!-- CLIENT: Replace event-hiring-performers.jpg with theater performers or stage lights -->
+            <div class="md:w-2/5 shrink-0 relative overflow-hidden aspect-[16/10] md:aspect-auto">
+              <img src="/assets/images/event-hiring-performers.jpg" alt="Work with Wish Upon a Starre - Performance Career Opportunity" class="w-full h-full object-cover absolute inset-0" width="400" height="400" referrerPolicy="no-referrer">
+              <span class="absolute top-3 left-3 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full">Recruitment</span>
+            </div>
+            <div class="p-6 md:p-8 flex flex-col justify-between flex-grow space-y-4">
+              <div class="space-y-2">
+                <div class="flex items-center space-x-1.5 text-xs font-semibold text-pink-700">
+                  <span>📅 Applications Open Today</span>
+                  <span>•</span>
+                  <span>⏰ Flexible Weekend Auditions</span>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-950">We Are Hiring Performers</h2>
+                <p class="text-brand-muted text-sm leading-relaxed">
+                  Are you a reliable, local performer, singer, actor, or dancer based in Dorset? We are looking for talented, warm, and highly professional individuals to join our crew of fairytale princesses, forest fairies, and educational hosts.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-2 border-t border-purple-50">
+                <span class="text-xs font-bold text-pink-800">Bournemouth Rehearsal Studio</span>
+                <a href="mailto:info@example.com" class="inline-flex items-center justify-center bg-pink-600 hover:bg-opacity-95 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all">
+                  Email CV
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ INFO BAND -->
+    <section class="py-16 bg-brand-blush border-t border-b border-pink-100" aria-labelledby="faq-title">
+      <div class="max-w-4xl mx-auto px-4 space-y-8">
+        <div class="text-center">
+          <h2 id="faq-title" class="text-3xl font-display font-bold">Frequently Asked Questions</h2>
+          <p class="text-sm text-brand-muted mt-2">Everything you need to know about our scheduled sessions.</p>
+        </div>
+        <div class="space-y-4">
+          <details class="bg-white p-5 rounded-2xl border border-purple-100 group cursor-pointer transition-all">
+            <summary class="font-bold text-indigo-950 flex justify-between items-center list-none select-none">
+              <span>Do I need to book public sessions in advance?</span>
+              <span class="text-brand-purple transform group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p class="text-brand-muted text-sm leading-relaxed mt-3">
+              Yes, we strongly recommend booking in advance. Our Sensory and Song classes and holiday character workshops are extremely popular and have strict capacity limits to ensure a safe, high-quality experience for everyone.
+            </p>
+          </details>
+
+          <details class="bg-white p-5 rounded-2xl border border-purple-100 group cursor-pointer transition-all">
+            <summary class="font-bold text-indigo-950 flex justify-between items-center list-none select-none">
+              <span>Can I book you for private nurseries or school workshops?</span>
+              <span class="text-brand-purple transform group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p class="text-brand-muted text-sm leading-relaxed mt-3">
+              Absolutely! We regularly supply nurseries, preschools, and primary schools across Dorset with sensory song and educational workshops. Please reach out via email for block booking rates.
+            </p>
+          </details>
+
+          <details class="bg-white p-5 rounded-2xl border border-purple-100 group cursor-pointer transition-all">
+            <summary class="font-bold text-indigo-950 flex justify-between items-center list-none select-none">
+              <span>What happens if an event is canceled due to weather?</span>
+              <span class="text-brand-purple transform group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p class="text-brand-muted text-sm leading-relaxed mt-3">
+              In the extremely rare event of a cancellation, we will notify all ticket holders immediately via email/text and provide a full automatic refund or coordinate transfer tickets to the next scheduled date.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-primary text-gray-300 pt-16 pb-8 border-t border-indigo-950 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-indigo-900">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-2">
+            <img src="/assets/images/logo-main.png" alt="Wish Upon a Starre Icon" class="h-10 w-auto rounded-full bg-white p-0.5" referrerPolicy="no-referrer">
+            <span class="font-display font-bold text-lg text-white">Wish Upon a <span class="text-brand-pink">Starre</span></span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-sm">
+            Award-winning children's character party entertainment based in Dorset, UK. We bring fairytale princess magic, whimsical fairy adventures, and early-years sensory play to families, nurseries, and public celebrations.
+          </p>
+          <div class="flex space-x-3.5 pt-2">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Facebook">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Instagram">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on TikTok">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.25 1.79v4.03c-1.44-.17-2.86-.74-3.98-1.72-.08-.07-.13-.17-.25-.21-.02 1.39-.01 2.78-.01 4.17 0 1.43-.24 2.91-.94 4.14-.72 1.25-1.92 2.21-3.3 2.65-1.46.47-3.08.45-4.52-.1-.08-.03-.15-.09-.24-.11-1.39-.58-2.52-1.67-3.14-3.07-.63-1.4-.64-3.04-.15-4.46.46-1.34 1.46-2.49 2.73-3.14.07-.03.11-.11.19-.14 1.05-.44 2.21-.6 3.35-.45V.02zm0 16.29c1.07.03 2.15-.36 2.84-1.18.72-.85.89-2.06.63-3.13-.02-.1-.05-.2-.11-.28-.01-1.43 0-2.86 0-4.3-.43.15-.84.36-1.22.63-.82.59-1.36 1.55-1.49 2.56-.01 1.43 0 2.86 0 4.3.18.1.37.24.58.26.24.03.5.02.77.14z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-4">
+          <span class="font-display font-bold text-sm text-white block uppercase tracking-wide">Quick Exploration</span>
+          <nav class="flex flex-col space-y-2 text-xs sm:text-sm" aria-label="Footer Quick Navigation">
+            <a href="whats-coming-up.html" class="hover:text-white transition-colors">What’s Coming Up?</a>
+            <a href="our-story.html" class="hover:text-white transition-colors">Our Story</a>
+            <a href="sensory-and-song.html" class="hover:text-white transition-colors">Sensory & Song Sessions</a>
+            <a href="parties-for-little-starres.html" class="hover:text-white transition-colors">Party Entertainment</a>
+            <a href="our-characters.html" class="hover:text-white transition-colors">Meet the Characters</a>
+            <a href="packages-and-prices.html" class="hover:text-white transition-colors">Packages & Prices</a>
+          </nav>
+        </div>
+
+        <div class="md:col-span-4 space-y-4">
+          <span class="font-display font-bold text-sm text-white block uppercase tracking-wide">Contact Our Office</span>
+          <div class="text-xs sm:text-sm space-y-3">
+            <p class="leading-normal text-gray-400">
+              Based in beautiful Dorset, United Kingdom. Hosting parties in Bournemouth, Poole, Christchurch, Weymouth, Dorchester, and surrounding areas.
+            </p>
+            <div class="space-y-1">
+              <span class="text-gray-500 block">General Enquiries:</span>
+              <a href="mailto:info@example.com" class="text-brand-pink hover:underline font-semibold block">info@example.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
+        <div class="space-y-2 text-xs text-gray-500">
+          <p>© 2026 Wish Upon a Starre. All rights reserved.</p>
+          <div class="flex flex-wrap gap-4 text-gray-400">
+            <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+            <span class="text-indigo-900">•</span>
+            <a href="cookie-policy.html" class="hover:text-white transition-colors">Cookie Policy</a>
+            <span class="text-indigo-900">•</span>
+            <button class="hover:text-white transition-colors font-medium cursor-pointer" data-manage-cookies>Manage cookies</button>
+          </div>
+        </div>
+
+        <div class="md:absolute md:bottom-0 md:right-0 shrink-0 flex items-center space-x-2 bg-indigo-950 p-2.5 rounded-xl border border-indigo-900/40">
+          <div class="text-right hidden sm:block">
+            <span class="text-[10px] text-gray-400 block uppercase tracking-wider font-mono">Outstanding Trust Partner</span>
+            <span class="text-xs font-bold text-brand-pink block">OBT Certified</span>
+          </div>
+          <img src="/assets/images/OBT.png" alt="OBT Partner Certification Badge" class="h-10 w-auto rounded opacity-80 hover:opacity-100 transition-opacity" referrerPolicy="no-referrer">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/cookies.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
